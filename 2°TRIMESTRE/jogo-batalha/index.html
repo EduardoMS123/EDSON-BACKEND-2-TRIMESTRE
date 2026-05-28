@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GUERRA TOTAL</title>
+</head>
+<body>
+    <div class="arena">
+        <img src="/tmp/guest-birnpx/Downloads/edson-backend-main/jogo-batalha/ordem-paranormal-dalmo-magno.gif" alt="dalmoooooooo" width="470" height="264">
+        <h2>🗡️ARENA PARANORMAL🗡️</h2>
+        <div class="controles">
+            <label>Escolha a sua <strong>Classe</strong></label>
+            <select id="classe">
+                <option value="Comabtente">Combatente</option>
+                <option value="Mago">Mago</option>
+                <option value="Arqueiro">Arqueiro</option>
+            </select>
+            <label>Equipe a sua <strong>Arma</strong></label>
+            <input type="text" id="arma" placeholder="Espada, Cajado ou Arco">
+            <button onclick="lutar()">INICIAR O COMBATE</button>
+        </div>
+
+            <div id="log">Aguardando desafiante...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

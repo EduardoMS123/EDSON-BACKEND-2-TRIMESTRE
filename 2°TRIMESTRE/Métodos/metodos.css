@@ -33,6 +33,9 @@
   .painel-combate { 
     display: none;
    }
+  .painel-criacao{
+    display: block;
+  }
 
 .btn-principal:hover{
   background-color: #ff5722;

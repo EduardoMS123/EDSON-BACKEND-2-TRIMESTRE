@@ -17,28 +17,29 @@ class Monstro{
 };
 
 let MonstroBatalha;
+function AtualizaTela(){
+    document.getElementById('statusNome').innerHTML = MonstroBatalha.nome;
+    document.getElementById('statusHp').innerHTML = `Vida Atual: ${MonstroBatalha.hp}❤️`;
 
-    function IniciarJogo(){
-        
-        const nome = document.getElementById('nomeMonstro').value;
-        const hp = document.getElementById('hpMonstro').value;
+}
 
-        MonstroBatalha = new Monstro(nome, hp);
-
-        function AtualizaTela(){
-            document.getElementById('statusNome').innerHTML = MonstroBatalha.nome;
-            document.getElementById('statusHp').innerHTML = `Vida Atual: ${MonstroBatalha.hp}❤️`;
-        }
-
-        document.getElementById('painel-criacao').style.dsiplay = 'none';
-        document.getElementById('painel-combate').style.display = 'block';
-        AtualizaTela();
-    };
+function IniciarJogo(){
+    const nome = document.getElementById('nomeMonstro').value;
+    const hp = document.getElementById('hpMonstro').value;
+    document.getElementById('painel-criacao').style.display = "none";
+    document.getElementById('painel-combate').style.display = "block";
+    MonstroBatalha = new Monstro(nome, hp);
+    AtualizaTela();
+};
 
 
-    function BaterNoMonstro(){
-        
-    }
+function BaterNoMonstro(){
+    const valorDano = Number(document.getElementById('danoInput').value);
+    const msg = MonstroBatalha.ReceberDano(valorDano);
+    document.getElementById('log').innerHTML = msg
+    AtualizaTela()
+    
+};
 
 
 

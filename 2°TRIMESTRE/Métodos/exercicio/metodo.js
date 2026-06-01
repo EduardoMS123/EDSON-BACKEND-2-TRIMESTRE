@@ -13,6 +13,11 @@ class Monstro{
         return `${this.nome} sofreu ${DanoRecebido} de dano!`
     };
 
+    ReceberCura(CuraRecebida){
+        this.hp += CuraRecebida;
+        return `${this.nome} ganhou ${CuraRecebida} de HP!`
+    }
+
 
 };
 
@@ -40,6 +45,13 @@ function BaterNoMonstro(){
     AtualizaTela()
     
 };
+
+function CurarMonstro(){
+    const valorCura = Number(document.getElementById('curaInput').value);
+    const msg = MonstroBatalha.ReceberCura(valorCura);
+    document.getElementById('log').innerHTML = msg;
+    AtualizaTela
+}
 
 
 

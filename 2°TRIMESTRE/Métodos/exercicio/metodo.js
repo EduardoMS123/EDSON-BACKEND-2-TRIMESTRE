@@ -50,7 +50,7 @@ function CurarMonstro(){
     const valorCura = Number(document.getElementById('curaInput').value);
     const msg = MonstroBatalha.ReceberCura(valorCura);
     document.getElementById('log').innerHTML = msg;
-    AtualizaTela
+    AtualizaTela()
 }
 
 

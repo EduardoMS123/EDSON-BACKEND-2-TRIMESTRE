@@ -1,6 +1,6 @@
 
 
-public class Aula09_ClasseAtributo {
+public class Aula09_ClasseAtributos {
     public static void main(String[] args){
         Carro09 meuCarro = new Carro09();
         meuCarro.modelo = "Fusca";

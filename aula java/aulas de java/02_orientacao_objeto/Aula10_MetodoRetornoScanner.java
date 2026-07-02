@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class Aula10_MetodoRetornoScanner{
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
-        contaScanner minhaConta = new contaScanner();
+   Scanner teclado = new Scanner(System.in);
+        contaScanner minhaConta = new contaScanner();     
 
         System.out.println("Saldo Inicial: R$" + minhaConta.verificarSaldo());
 
